@@ -413,13 +413,14 @@ img {
 
 main {
   width: 100%;
-  height: 100vh;
+  height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(../img/main-bg.jpg);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding-bottom: 100px; }
 
 .main__title {
   text-align: center;
@@ -427,7 +428,6 @@ main {
 
 .form__group {
   position: relative;
-  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +454,7 @@ main {
   display: flex;
   width: 100%; }
 
-.field-block:last-child {
+.field-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,9 +462,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .field {
   height: 40px;
@@ -486,8 +486,9 @@ main {
 
 .field--submit {
   width: 150px;
-  color: black;
-  position: relative; }
+  margin: 0 auto;
+  padding: 0;
+  color: black; }
   .field--submit:focus, .field--submit:hover, .field--submit:active {
     color: lightseagreen;
     -webkit-transform: none;
@@ -496,6 +497,17 @@ main {
 .form__label {
   color: #fff;
   font-size: 20px; }
+
+.form__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  line-height: 36px;
+  text-decoration: none;
+  color: black; }
+  .form__link:hover {
+    text-decoration: none; }
 
 .form__select {
   padding: 5px 0;
@@ -528,11 +540,24 @@ main {
 .red {
   color: red; }
 
+.red__bg {
+  background-color: #d63167; }
+
 .green {
   color: greenyellow; }
 
-.fz0 {
-  font-size: 0; }
+.green__bg {
+  background-color: #50cc60; }
 
-.fz20 {
-  font-size: 20px; }
+.very-green__bg {
+  background-color: green; }
+
+@media (min-width: 1200px) {
+  .main {
+    height: 100vh; }
+  .field-block:last-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .field--submit {
+    margin: 0; } }

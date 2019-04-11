@@ -33,42 +33,47 @@
                   <div class="form__group">
                     <label for="first-name" class="form__label">Ваше имя</label>
                     <input type="text" id="first-name" class="field check" name="first-name"
-                           placeholder="Вася Пупкин" required>
+                           placeholder="Вася Пупкин">
+                    <p class="form__text"></p>
                   </div>
                   <div class="form__group">
                     <label for="last-name" class="form__label">Ваша фамилия</label>
                     <input type="text" id="last-name" class="field check" name="last-name"
-                           placeholder="Вася Пупкин" required>
+                           placeholder="Вася Пупкин">
+                    <p class="form__text"></p>
                   </div>
                   <div class="form__group">
-                    <label for="form-control" class="form__label">Язык</label>
-                    <select class="form__select field check" name="language" size="1" required id="form-control">
-                      <option class="form__language" value=""></option>
+                    <label for="form-control" class="form__label">Язык программирования</label>
+                    <select class="form__select field check" name="language" size="1" id="form-control">
+                      <option class="form__language" value="">...</option>
                       <option class="form__language" value="Java">Java</option>
                       <option class="form__language" value="JavaScript">JavaScript</option>
                       <option class="form__language" value="C++">C++</option>
                       <option class="form__language" value="Python">Python</option>
                       <option class="form__language" value="PHP">PHP</option>
                     </select>
+                    <p class="form__text"></p>
                   </div>
                 </div>
                 <div class="field-block col-md-6">
                   <div class="form__group">
                     <label for="date" class="form__label">Дата рождения</label>
-                    <input type="date" id="date" class="field check" name="date" placeholder="01.01.1970" required>
+                    <input type="text" id="date" class="field check" name="date" placeholder="mm.dd.yyyy">
+                    <p class="form__text"></p>
                   </div>
                   <div class="form__group">
-                      <label for="email" class="form__label">Электронная почта</label>
-                      <input type="email" id="email" class="field check" name="email" placeholder="nngu@mail.com" required>
+                      <label for="mail" class="form__label">Электронная почта</label>
+                      <input type="text" id="mail" class="field check" name="mail" placeholder="nngu@mail.com">
+                    <p class="form__text"></p>
                   </div>
                   <div class="form__group form__group-gender">
                     <label for="gender" class="form__label">Ваш пол</label>
-                    <input type="radio" id="gender" name="gender" class="field gender" value="male" checked> М
-                    <input type="radio" name="gender" class="field gender" value="female"> Ж
+                    <input type="radio" id="gender" name="gender" class="field gender check" checked> М
+                    <input type="radio" name="gender" class="field gender check"> Ж
+                    <p class="form__text"></p>
                   </div>
                   <div class="form__submit">
-                    <label for="submit">Отправить</label>
-                    <input type="submit" class="field field--submit check" id="submit">
+                    <button class="field field--submit"><a href="#" class="form__link">Отправить</a></button>
                   </div>
                 </div>
               </div>
