@@ -416,7 +416,7 @@ main {
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(../../img/main-bg.jpg);
+  background-image: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -426,7 +426,19 @@ main {
   width: 100%; }
 
 .form__group {
-  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  color: #a9ab2e; }
+
+.form__submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,15 +454,85 @@ main {
   display: flex;
   width: 100%; }
 
-.form__select {
-  color: #999; }
-
-.form__language {
-  color: #111; }
+.field-block:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .field {
   height: 40px;
+  padding-left: 10px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #999;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
+  font-size: 20px; }
+  .field:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 5px 2px cornflowerblue;
+            box-shadow: 0px 0px 5px 2px cornflowerblue;
+    outline: none; }
+  .field:focus, .field:active {
+    color: black; }
+
+.field--submit {
+  width: 150px;
+  color: black;
+  position: relative; }
+  .field--submit:focus, .field--submit:hover, .field--submit:active {
+    color: lightseagreen;
+    -webkit-transform: none;
+            transform: none; }
+
+.form__label {
+  color: #fff;
+  font-size: 20px; }
+
+.form__select {
+  padding: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  color: black; }
+
+.form__language {
+  width: 300px;
+  color: black; }
+
+.gender {
+  width: 25px;
+  margin: 0 10px; }
+  .gender:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.form__group-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff; }
+
+.red {
+  color: red; }
+
+.green {
+  color: greenyellow; }
+
+.fz0 {
+  font-size: 0; }
+
+.fz20 {
   font-size: 20px; }
