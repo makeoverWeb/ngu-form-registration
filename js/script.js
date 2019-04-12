@@ -45,7 +45,7 @@ btn.onclick = function () {
               arrField[i].classList.add('green__bg');
               iter += 1;
             } else {
-                arrText[i].innerHTML = `Введите ${arrLabel[i].innerHTML}`;
+                arrText[i].innerHTML = 'Введите корректное значение';
                 arrLabel[i].classList.remove('green');
                 arrField[i].classList.remove('green__bg');
                 arrLabel[i].classList.add('red');
